@@ -1,0 +1,47 @@
+.Deliver-card{
+    margin-top: 7em;
+
+}
+.Delivery-ind-Card{
+margin: 1em;
+
+
+}
+.Card-action h3{
+ margin-left: 1.5em;
+}
+.deliver-button{
+    margin-left: 4em;
+}
+.Product-quantity{
+    display: flex;
+    justify-content: center;
+}
+.Product-price{
+    display: flex;
+    justify-content: center;
+}
+.Product-price h5{
+    font-weight: 400;
+    margin-top: 0.2em;
+    margin-right: 0.3em;
+}
+.Delivery-Subcard{
+    display: flex;
+    justify-content: center;
+}
+/* .Product-image{
+    display: flex;
+} */
+.Address-Container{
+    /* text-align: left; */
+    justify-content: center;
+    align-items: center;
+}
+.Address-Container h3{
+   justify-content: center;
+    
+}
+.HomeButton{
+    display: flex;
+}
