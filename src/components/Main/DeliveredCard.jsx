@@ -14,7 +14,7 @@ import OrderSubCard from './OrderSubCard';
 
 const BASE_URL='https://buybold.vmplay.ml/'
 
-
+// const BASE_URL='http://localhost:4000/'
 
     
   
@@ -49,19 +49,7 @@ const DeliveredCard=({daTa})=> {
     const [Total_Price,setTotal_Price]=useState("")
     const [Clicked, setClicked] = useState("outlined");
     
-    const navigate=useNavigate();
-  //   const Button = styled.button`
-  //   background-color: #1968FF;
-  //   color: white;
-  //   font-size: 12px;
-  //   padding: 8px 80px;
-  //   outline:none;
-  //   border: none;
-  //   border-radius: 4px;
-  //   width:75%;
-  //   cursor: pointer;
-  //   margin-top:0.5em;
-  // `;
+  
     const MovetoOrder=async()=>{
         console.log(daTa.order_id)
             await fetch(BASE_URL + `orderManage/getstatus/${daTa.order_id}`, { method: 'POST', body: JSON.stringify({}), })
@@ -112,11 +100,7 @@ const DeliveredCard=({daTa})=> {
             
               setOrderList("Order delivered");
               setClicked("contained")
-              // setDeliver("Delivered")
               setfetchbutton(false)
-            // setcp("order Delivered by name")
-            // setOrder(data.order_id)
-          
           })
           .catch((error) => {
             console.log(error);
@@ -154,8 +138,6 @@ const DeliveredCard=({daTa})=> {
              console.log(result);
             console.log("mila quantity?")
              setQuantity(result.qnt);
-            //  setprod_id(result.prod_id)
-            //  console.log(result.qnt);
      
            })
            .catch((error) => {

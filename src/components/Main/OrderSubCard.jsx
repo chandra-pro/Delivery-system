@@ -6,6 +6,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import './opencard.css'
 const BASE_URL='https://buybold.vmplay.ml/'
+// const BASE_URL='http://localhost:4000/'
 
 
 function OrderSubCard({DaTa}) {

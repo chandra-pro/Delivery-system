@@ -2,7 +2,10 @@ import { useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./styles.module.css";
+// import {Puff} from "react-loading-icons/dist/esm/components/puff";
+
 const BASE_URL='https://buybold.vmplay.ml/'
+// const BASE_URL='http://localhost:4000/'
 const Signup = () => {
 	const [data, setData] = useState({
 		firstName: "",

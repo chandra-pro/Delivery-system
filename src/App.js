@@ -5,6 +5,7 @@ import Login from "./components/Login";
 import EmailVerify from "./components/EmailVerify";
 import OrderedHistory from "./components/Main/OrderedHistory";
 import DeliveryPartner from "./components/Main/DeliveryPartner";
+import Bugs from "./components/Main/Bugs";
 
 function App() {
 	const user = localStorage.getItem("token");
@@ -18,6 +19,9 @@ function App() {
 			<Route path="/users/:id/verify/:token" element={<EmailVerify/>}/>
 			<Route path="/delivereditems" element={<OrderedHistory />} />
             <Route path="/undelivereditems" element={<DeliveryPartner/>} />
+			<Route path="/bugs" element={<Bugs/>} />
+
+			
 		</Routes>
 	);
 }

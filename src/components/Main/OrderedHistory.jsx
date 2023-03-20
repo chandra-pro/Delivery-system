@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react'
 
 import DeliveredCard from './DeliveredCard';
 const BASE_URL='https://buybold.vmplay.ml/'
-// 
+// const BASE_URL='http://localhost:4000/'
 
 function OrderedHistory() {
     const [listitem,setlistitem]=useState([]);
