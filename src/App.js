@@ -17,9 +17,9 @@ function App() {
 			<Route path="/login" exact element={<Login />} />
 			<Route path="/" element={<Navigate replace to="/login" />} />
 			<Route path="/users/:id/verify/:token" element={<EmailVerify/>}/>
-			<Route path="/delivereditems" element={<OrderedHistory />} />
-            <Route path="/undelivereditems" element={<DeliveryPartner/>} />
-			<Route path="/bugs" element={<Bugs/>} />
+			{user && <Route path="/delivereditems" element={<OrderedHistory />} />}
+            {user && <Route path="/undelivereditems" element={<DeliveryPartner/>} />}
+			{user && <Route path="/bugs" element={<Bugs/>} />}
 
 			
 		</Routes>

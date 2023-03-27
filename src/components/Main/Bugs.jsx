@@ -4,7 +4,7 @@ import CommentIcon from '@mui/icons-material/Comment';
 import './opencard.css'
 import { Key } from '@mui/icons-material';
 const BASE_URL='https://buybold.vmplay.ml/'
-
+// const BASE_URL='http://localhost:4000/'
 const Bugs=()=> {
     const [bugList,setbugList]=useState([]);
     const fetchbug=async()=>{
